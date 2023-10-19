@@ -1,0 +1,44 @@
+\section{Bedienung}
+
+\subsection{Allgemeines zum \textit{MAX274}}
+Die integrierte Schaltung (IC) \textit{MAX274} ist in der Lage aktive Tief- und Bandpassfilter gerader Ordnung umzusetzen. Hierbei verwendet werden können Butterworth-, Tschebyscheff- und Besselfilter. 
+Besonderheit des IC ist hierbei, dass sich die Filtercharakteristiken allein durch die Beschaltung mit Widerständen einstellen lassen.
+Ein \textit{MAX274} enthält dabei vier Filtersektionen zweiter Ordnung. 
+Durch Kaskadierung dieser Sektionen lassen sich beliebig hohe gerade Filterordnungen implementieren.
+\\ \newline
+Die hier beschriebene Software erlaubt den Entwurf von Filtern und die anschließende Berechnung von Widerstandswerten zur Beschaltung des IC.
+
+Achtung: Die hier beschriebene Software ermöglicht es außerdem Filter ungerader Ordnung, Hochpassfilter und Filter nach Cauerapproximation zu designen. Diese können \underline{nicht} auf dem \textit{MAX274} realisiert werden!
+Knöpfe zur Berechnung der Widerstandswerte werden in diesem Fall ausgeblendet.
+
+\subsection{Entwurf von Filtern}
+
+Zunächst sollte im Feld \textit{Filtertyp} die gewünschte Filterart ausgewählt werden.
+Es kann zwischen Tief-, Hoch- und Bandpassfiltern gewählt werden.
+
+Darunter lassen sich die maximale Dämpfung im Durchlassbereich ($A_d$) und die minimale Dämpfung im Sperrbereich ($A_s$) des Filters, sowie seine Grenzfrequenzen angeben. 
+Die Eingabefelder der nicht ausgewählten Filtertypen sind grau hinterlegt.
+
+Hieraufhin werden die minimalen Filterordnungen der verschiedenen Approximationen berechnet, die zur Einhaltung der gewünschten Tolleranzvorgaben benötigt werden.
+Die Software unterstützt das Berechnen von Filtern bis zur Ordnung 24.
+
+Achtung: Es können nur Widerstandswerte für Filter gerader Ordnung berechnet werden.
+Ist z.\,B. eine minimale Filterordnung von 3 errechnet worden, sollte diese auf mindestens 4 erhöht werden.
+
+Nach Auswahl der Filterapproximation können durch das Drücken des Knopfs \textit{Filter berechnen} die Pol- und Nullstellen, sowie $f_0$ und $Q$ der Filtersektionen errechnet werden.
+
+Wird der Knopf \textit{Plot} betätigt wird die Übertragungsfunktion des zuletzt berechneten Filters als Plot dargestellt. 
+Hier werden Betrag, Phase und Gruppenlaufzeit aufgeführt.
+
+Entspricht das Filter dem gewünschten Verhalten kann dieses durch den Knopf \textit{Exportieren} in den Tab zur Widerstandsberechnung exportiert werden.
+
+\subsection{Bestimmung von Widerstandswerten}
+
+Nach dem Exportieren einer Filtercharakteristik werden automatisch die Widerstandswerte $R_1, R_2, R_3$ und $R_4$ zur Beschaltung des \textit{MAX274} berechnet und nach Sektionen sortiert in einer Tabelle aufgeführt.
+Die Berechnung der Widerstandswerte aus $f_0$ und $Q$ lässt sich außerdem jederzeit durch das betätigen des Knopfs \textit{Berechne Widerstandswerte} manuell ausführen.
+
+Oftmals gibt es Vorgaben an die Auswahl von Widerstandswerten, wie z.\,B. die E-Reihen. Die Widerstandswerte lassen sich in der Tabelle ändern. 
+Daraufhin können mit \textit{Berechne Pol-/Nullstellen aus Widerstandswerten} neue Pol- und Nullstellen, sowie $f_0$s und $Q$s berechnet werden.
+
+Das modifiezierte Übertragungsverhalten lässt sich über das Betätigen von \textit{Plot} anzeigen.
+Über das daneben liegende Drop-Down-Menü kann auch das Übertragungsverhalten einzelner Filtersektionen darstellen.

@@ -1,0 +1,33 @@
+\section{Installation}
+
+\subsection{Microsoft Windows}
+\subsubsection*{aus Binärdatei:}
+Aktuelle Binärdateien für Microsoft Windows finden sich \href{https://github.com/Enolekoi/max274_filterdesign}{hier}.
+\subsubsection*{aus Quellcode:}
+\begin{enumerate}
+\item Installiere folgende Abhängigkeiten:
+\mint{bash}| python3, qt5, pyqt5, numpy, scipy, matplotlib, pyinstall, git|
+\item Klone Repository:
+\mint{bash}| $ git clone https://github.com/Enolekoi/max274_filterdesign.git | %$
+\item Wechsle ins Arbeitsverzeichnis:
+\mint{bash}| $ cd /max274_filterdesign | %$
+\item Erstelle Ausführbare Datei:
+\mint[breaklines, breaksymbolleft=]{bash}| $ python -m PyInstaller --onefile --windowedd --add-data "max_intern.png;." max274.py| %$
+\item Wechsle in das Verzeichnis, welches Binärdatei enthält:
+\mint{bash}| $ cd /dist | %$
+\end{enumerate}
+\subsection{Linux}
+\subsubsection*{aus Quellcode:}
+
+\begin{enumerate}
+\item Installiere folgende Abhängigkeiten:
+\mint{bash}| python3, qt5, pyqt5, numpy, scipy, matplotlib, pyinstall, git|
+\item Klone Repository:
+\mint{bash}| $ git clone https://github.com/Enolekoi/max274_filterdesign.git | %$
+\item Wechsle ins Arbeitsverzeichnis:
+\mint{bash}| $ cd /max274_filterdesign | %$
+\item Erstelle Ausführbare Datei:
+\mint[breaklines, breaksymbolleft=]{bash}| $ python -m PyInstaller --onefile --windowedd --add-data "max_intern.png:." max274.py| %$
+\item Wechsle in das Verzeichnis, welches Binärdatei enthält:
+\mint{bash}| $ cd /dist | %$
+\end{enumerate}
