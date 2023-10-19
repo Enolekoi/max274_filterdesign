@@ -459,7 +459,8 @@ class Fenster(QWidget):
 
         tab1_h4= QHBoxLayout()
         tab1_h4.addLayout(v_table)
-        tab1_h4.addStretch(1) tab1_main = QVBoxLayout()
+        tab1_h4.addStretch(1) 
+        tab1_main = QVBoxLayout()
         tab1_main.addLayout(tab1_h1)
         tab1_main.addLayout(tab1_v2)
         tab1_main.addLayout(tab1_v3)
