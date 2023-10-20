@@ -2,6 +2,7 @@
 
 ## Installation (Linux)
   1. Installiere Abhängigkeiten:
+
   Unter Arch Linux:
   ```
   $ pacman -S python3 qt5 pyqt5 numpy scipy matplotlib pyinstall
