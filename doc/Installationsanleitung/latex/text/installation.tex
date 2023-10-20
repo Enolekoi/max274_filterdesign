@@ -5,8 +5,12 @@
 Aktuelle Binärdateien für Microsoft Windows finden sich \href{https://github.com/Enolekoi/max274_filterdesign}{hier}.
 \subsubsection*{aus Quellcode:}
 \begin{enumerate}
-\item Installiere folgende Abhängigkeiten:
-\mint{bash}| python3, qt5, pyqt5, numpy, scipy, matplotlib, pyinstall, git|
+\item Installiere folgende Abhängigkeiten: \\
+  \href{https://www.python.org/downloads/windows/}{python3},
+  \href{https://pip.pypa.io/en/stable/installation/}{pip},
+  \href{https://doc.qt.io/qt-5/windows.html}{qt5}, 
+  \href{https://git-scm.com/download/win}{git}
+\mint{bash}| $ py -m pip install pyqt5 numpy scipy matplotlib pyinstall | %$
 \item Klone Repository:
 \mint{bash}| $ git clone https://github.com/Enolekoi/max274_filterdesign.git | %$
 \item Wechsle ins Arbeitsverzeichnis:
@@ -20,8 +24,12 @@ Aktuelle Binärdateien für Microsoft Windows finden sich \href{https://github.c
 \subsubsection*{aus Quellcode:}
 
 \begin{enumerate}
-\item Installiere folgende Abhängigkeiten:
-\mint{bash}| python3, qt5, pyqt5, numpy, scipy, matplotlib, pyinstall, git|
+\item Installiere folgende Abhängigkeiten: \\
+Unter Arch Linux: 
+\mint{bash} | $ pacman -S python3, qt5, pyqt5, numpy, scipy, matplotlib, pyinstall, git| %$
+Unter Ubuntu/Debian: 
+\mint{bash} | $ apt-get install python3 python3-pip qt5 git | %$
+\mint{bash} | $ python -m pip install pyqt5 numpy scipy matplotlib pyinstall | %$
 \item Klone Repository:
 \mint{bash}| $ git clone https://github.com/Enolekoi/max274_filterdesign.git | %$
 \item Wechsle ins Arbeitsverzeichnis:

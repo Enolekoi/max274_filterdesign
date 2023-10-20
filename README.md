@@ -5,11 +5,11 @@
 
   Unter Arch Linux:
   ```
-  $ pacman -S python3 qt5 pyqt5 numpy scipy matplotlib pyinstall
+  $ pacman -S python3 qt5 pyqt5 numpy scipy matplotlib pyinstall git
   ```
   Unter Debian/Ubuntu:
   ```
-  $ apt-get install python3 python3-pip qt5 
+  $ apt-get install python3 python3-pip qt5 git
   $ python -m pip install pyqt5 numpy scipy matplotlib pyinstall
   ```
   2. Klone Repository
@@ -28,7 +28,7 @@
   
 ## Installation (Windows)
   1. Installiere Abhängigkeiten:
-  [python3](https://www.python.org/downloads/windows/), [pip](https://pip.pypa.io/en/stable/installation/), [qt5](https://doc.qt.io/qt-5/windows.html)
+  [python3](https://www.python.org/downloads/windows/), [pip](https://pip.pypa.io/en/stable/installation/), [qt5](https://doc.qt.io/qt-5/windows.html), [git](https://git-scm.com/download/win)
   ```
   py -m pip install pyqt5, numpy, scipy, matplotlib, pyinstall
   ```
