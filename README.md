@@ -22,22 +22,27 @@
   ```
   4. Erstelle executable mit folgendem Kommando
   ```
-  $ python -m PyInstaller --onefile --windowedd --add-data "max_intern.png:." max274.py
+  $ python -m PyInstaller --onefile --windowed --add-data "max_intern.png:." max274.py
   ```
   5. Die Binärdatei liegt im Verzeichnis 'max274_filterdesign/dist"
   
 ## Installation (Windows)
   1. Installiere Abhängigkeiten:
   [python3](https://www.python.org/downloads/windows/), [pip](https://pip.pypa.io/en/stable/installation/), [qt5](https://doc.qt.io/qt-5/windows.html), [git](https://git-scm.com/download/win)
+
   ```
   py -m pip install pyqt5, numpy, scipy, matplotlib, pyinstall
   ```
-  2. Wechsle ins Arbeitsverzeichnis
+  2. Klone Repository
+  ```
+  $ git clone https://github.com/Enolekoi/max274_filterdesign.git
+  ```
+  3. Wechsle ins Arbeitsverzeichnis
   ```
   $ cd /max274_filterdesign
   ``` 
-  3. Erstelle executable mit folgendem Kommando
+  4. Erstelle executable mit folgendem Kommando
   ```
-  $ python -m PyInstaller --onefile --windowedd --add-data "max_intern.png;." max274.py
+  $ python -m PyInstaller --onefile --windowed --add-data "max_intern.png;." max274.py
   ```
-  4. Die Binärdatei liegt im Verzeichnis 'max274_filterdesign/dist"
+  5. Die Binärdatei liegt im Verzeichnis 'max274_filterdesign/dist"
