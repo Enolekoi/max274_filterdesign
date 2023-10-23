@@ -3,11 +3,11 @@
 ## Installation (Linux)
   1. Installiere Abhängigkeiten:
 
-  Unter Arch Linux:
+  ### Unter Arch Linux:
   ```
   $ pacman -S python3 qt5 pyqt5 numpy scipy matplotlib pyinstall git
   ```
-  Unter Debian/Ubuntu:
+  ### Unter Debian/Ubuntu:
   ```
   $ apt-get install python3 python3-pip qt5 git
   $ python -m pip install pyqt5 numpy scipy matplotlib pyinstall
