@@ -370,7 +370,7 @@ class Fenster(QWidget):
         ## Widerstandsberechnung
         self.lb_res_Filtertyp = QLabel("",self)
         self.pb_calc_res     = QPushButton("Berechne Widerstandswerte",self)
-        self.pb_calc_res.setToolTip("Berechne aus f<sub>0</sub> und Q: \n H<sub>0</sub>, Widerstandswerte in [kΩ]; ermittle mit welchem Potential der Pin FC verbunden werden muss")
+        self.pb_calc_res.setToolTip("Berechne aus f<sub>0</sub> und Q: \n H<sub>0</sub>, Widerstandswerte in [Ω]; ermittle mit welchem Potential der Pin FC verbunden werden muss")
         self.pb_calc_pn      = QPushButton("Berechne Pol-/ Nullstellen aus Widerstandswerten",self)
         self.pb_calc_pn.setToolTip("Berechne aus R<sub>1</sub> bis R<sub>4</sub>: f<sub>0</sub>, Q, Pol- und Nullstellen")
         self.pb_plot_res     = QPushButton("Plot",self)
@@ -386,7 +386,7 @@ class Fenster(QWidget):
         self.tb_res_f0_q.setMaximumHeight(150)
         self.tb_res_f0_q.setMinimumWidth(900)
         self.tb_res_f0_q.setMinimumHeight(150)
-        self.tb_res_f0_q.setHorizontalHeaderLabels( ("f0", "Q", "H0", "FC verbunden mit", "R1 [kΩ]", "R2 [kΩ]", "R3 [kΩ]", "R4 [kΩ]") )
+        self.tb_res_f0_q.setHorizontalHeaderLabels( ("f0", "Q", "H0", "FC verbunden mit", "R1 [Ω]", "R2 [Ω]", "R3 [Ω]", "R4 [Ω]") )
         self.tb_res_f0_q.horizontalHeader().setStretchLastSection(True)
         self.tb_res_f0_q.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
         self.tb_res_f0_q.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
